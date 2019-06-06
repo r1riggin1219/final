@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/goods.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+      background: #;
+      color: ;
+    }
+
+  </style>
+</head>
+
+<body>
+    <nav class="navbar  fixed-to navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">商品</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        關於我門
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">不給你點</a>
+                </li>
+            </ul>
+            <!-- Search form -->
+            <div class="md-form mt-0">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </div>
+            <!--會員登錄 START -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <form class="box" action="index.html" method="post">
+                            <h1>Login</h1>
+                            <input type="text" name="" placeholder="Username">
+                            <input type="password" name="" placeholder="Password">
+                            <input type="submit" name="" value="Login">
+                            <div><a href="#">Create a new account?</a></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--會員登錄 END -->
+            <!-- 購物車 START -->
+            <div class="modal fade" id="CART" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">購物車</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-12 mb-5">
+                                <h4 class="title-color">購物車</h4>
+                                <div class="d-block sidebar-product-list">
+                                    <a class="text-white remove" data-toggle="tooltip" data-placement="top" title="是否確定要移除">X</a>
+                                    <a href="product.html" class="d-inline-block">
+                                        <img src="./images/product/momo.jpg" alt="LTG-BY-0001" class="d-inline-block product-list-img">
+                                        <h6 class="d-inline-block">LTG-BY-0001</h6>
+                                    </a>
+                                    <p class="d-block text-secondary pl-4">
+                                        <span class="text-warning">1</span>&nbsp;X&nbsp;NT$500
+                                    </p>
+                                </div>
+                                <div class="d-block sidebar-product-list">
+                                    <a class="text-white remove" data-toggle="tooltip" data-placement="top" title="是否確定要移除">X</a>
+                                    <a href="product.html" class="d-inline-block">
+                                        <img src="./images/product/asusZF5.png" alt="LTG-BY-0001" class="d-inline-block product-list-img">
+                                        <h6 class="d-inline-block">LTG-BY-0001</h6>
+                                    </a>
+                                    <p class="d-block text-secondary pl-4">
+                                        <span class="text-warning">1</span>&nbsp;X&nbsp;NT$500
+                                    </p>
+                                </div>
+                                <div class="d-block sidebar-product-list">
+                                    <a class="text-white remove" data-toggle="tooltip" data-placement="top" title="是否確定要移除">X</a>
+                                    <a href="product.html" class="d-inline-block">
+                                        <img src="./images/product/iphone.jpg" alt="LTG-BY-0001" class="d-inline-block product-list-img">
+                                        <h6 class="d-inline-block">LTG-BY-0001</h6>
+                                    </a>
+                                    <p class="d-block text-secondary pl-4">
+                                        <span class="text-warning">1</span>&nbsp;X&nbsp;NT$500
+                                    </p>
+                                </div>
+                                <div class="d-block mt-3 mb-3">
+                                    <h5 class="text-center">小計：NT$&nbsp;1,000</h5>
+                                </div>
+                                <div class="d-block">
+                                    <a href="cart.html" class="btn btn-primary btn-block text-white" role="button">查看購物車</a>
+                                </div>
+                                <div class="d-block mt-1 mb-3">
+                                    <a href="checkout.html" class="btn btn-secondary btn-block text-white" role="button">結帳</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 購物車 END -->
+            <!--會員登錄&購物車BTN -->
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+                會員登入
+            </button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#CART">
+                購物車
+            </button>
+            <!--會員登錄&購物車BTN -->
+        </div>
+    </nav>
+    
+<section>
+
+    <div class="container come">
+        <div class="row">
+            <div class="col-3"></div>          
+            <img src="./images/product/asusROG.png" / style="height: 250px;">
+            <div class="col-5" style="font-family: DFKai-sb;">
+                <h2>名稱:ASUS ZenFone Max Pro M2 ZB631KL 128</h2>
+                <h4>價格 : 9999元</h4>
+                <form id='myform' method='POST' action='#'>
+                    <h4>數量 :
+                        <label for=""></label>
+                        <input type='button' value='-' class='qtyminus' field='quantity' />
+                        <input type='text' name='quantity' value='0' class='qty' />
+                        <input type='button' value='+' class='qtyplus' field='quantity' />
+                        個</h4>
+                </form>
+                <h4>庫存 : 60個</h4>
+                <button class="button">立即購買</button>
+                <button class="button">加入購物車</button>
+            </div>
+
+
+            <script>
+            $(function() {
+                // 按鈕,增加
+                $('.qtyplus').click(function(e) {
+                    // 停止按鈕
+                    e.preventDefault();
+                    // 得到名稱
+                    fieldName = $(this).attr('field');
+                    // 取值
+                    var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                    //如果是空的
+                    if (!isNaN(currentVal)) {
+                        // 增值
+                        $('input[name=' + fieldName + ']').val(currentVal + 1);
+                    } else {
+                        // 放0
+                        $('input[name=' + fieldName + ']').val(0);
+                    }
+                });
+                // 按鈕，減少到0
+                $(".qtyminus").click(function(e) {
+                    // 停止按鈕
+                    e.preventDefault();
+                    // 取名稱
+                    fieldName = $(this).attr('field');
+                    // 取值
+                    var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                    // 如果大於0
+                    if (!isNaN(currentVal) && currentVal > 0) {
+                        // 減一
+                        $('input[name=' + fieldName + ']').val(currentVal - 1);
+                    } else {
+                        // 0
+                        $('input[name=' + fieldName + ']').val(0);
+                    }
+                });
+            });
+            </script>
+
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6" style="text-align: center ;padding-top:10px;">
+                <h2>商品詳情</h2>
+                <p>Touch ID 指紋辨識，1200萬畫數，siri 語音助理，ios 系統</p>
+                <p>NCC:CCAI154G0120T0</br>
+                    型號:A1687<br>
+                    產地(國家):china<br>
+                    配件:全新副廠充電線，充電頭<br>
+                    保固期(月):3<br>
+                    技術規格:5.5寸，64GB容量，1200萬畫數，touch ID
+                </p>
+                <button class="button3">
+                    <p class="flip" onclick="myFunction()">使用說明</p>
+                </button>
+                <div id="panel">
+                    <font class="col-12" style="text-align: left;color: red;">
+                        <p>使用前請閱讀: <br>
+                            1）福利品主要為，公關機，展示機，舊換新機，或售後維修用途的備用貨品。貨品經過嚴格測試及整新侯在販售，過程中可能會涉及到維修以及更換零件。商品非新機，外觀依情況會有合理的使用痕跡，包括刮傷，撞傷等，但功能借正常無故障。 <br>2）商品非全新機，歸類為消耗品之零件會有合理消耗之情形，如電磁，防水效果，顯示器效果，但均在合理標準，超出標準會更換新零件。 <br>3）商品均過原廠保固期，或可能經過非原廠檢測以及維修，均無法參加任何原廠售後維修以及相關活動。<br>
+                            4）保固期為 3 個月，由非原廠廠商提供售後服務，非人故障廠商將提供免付費換貨或修復服務，保固期過後可另享有折扣付費維修服務。 <br>5）如果在7天鑒賞期需要辦理退貨，請還原出貨原狀，商品受到損壞以及配件缺少會依情況向買方求償。 <br>6）所有退貨以及送售後之商品都必須移除尋找我的 iPhone 功能，以及手機的畫面鎖，若未移除，會收取全額價值損失<br></p>
+                        <p>退換貨須知：<br><br>
+                            商品到貨隔日享蝦皮15天鑑賞(猶豫)期之權益【鑑賞(猶豫)期非試用期】，辦理退貨商品必
+                            ●3C相關商品，為一次性包裝商品，不可拆封或試用，請務必確認有購買需求後再拆封。須是全新狀態且包裝完整，否則將會影響退貨權限。<br>
+                            ●網頁商品會因為使用不同的品牌螢幕以及解析度不同，造成圖片顏色呈現略有不同，請以實品顏色為準。<br></p>
+                    </font>
+                </div>
+                <script>
+                function myFunction() {
+                    document.getElementById("panel").style.display = "block";
+                }
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="text-align: center">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <h1>留言板預留位置</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6" style="font-weight:bolder;">
+                <div class="panel-footer" align="center" style="text-align: center">瀏覽人數 :
+                    ???人
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div></section>
+
+</body>
+
+</html>

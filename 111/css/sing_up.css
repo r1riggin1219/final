@@ -1,0 +1,111 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #191919;
+}
+/* 登入 */
+.box2{
+  width: 400px;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+}
+.box2 h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box2 input[type = "text2"],.box2 input[type = "password2"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box2 input[type = "text2"]:focus,.box2 input[type = "password2"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+.box2 input[type = "submit2"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box2 input[type = "submit2"]:hover{
+  background: #2ecc71;
+}
+
+/* 註冊 */
+.box3{
+  margin-top: 50px;
+  width: 400px;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+}
+.box3 h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box3 input[type = "text3"],.box3 input[type = "password"],.box3 input[type = "date"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box3 input[type = "text3"]:focus,.box3 input[type = "password3"]:focus,.box3 input[type = "date"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+.box3 input[type = "submit3"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box3 input[type = "submit3"]:hover{
+  background: #2ecc71;
+}
+

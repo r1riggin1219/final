@@ -1,0 +1,58 @@
+.btnx {
+    position: relative;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-family: "montserrat";
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #2ecc71;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+    text-align: center;
+    border-radius: 24px;
+
+}
+
+.btnx::before {
+    background: #2ecc71;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+
+.btn1::before {
+    width: 0%;
+    height: 100%;
+}
+
+.btn1:hover::before {
+    width: 100%;
+}
+
+td {
+    color: #FFF;
+    border: 0;
+    text-align: center;
+    line-height: 50px;
+
+}
+tr{
+    color: #FFF;
+    text-align: center;
+}
+img{
+    width: 50px;
+}
+.bb{
+    margin-top: 7%;
+}
+body{
+    color: #FFF;
+}

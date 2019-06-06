@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>index</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/member.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+
+    h2{
+        font-family:DFKai-sb;
+        text-align: center;
+    }
+    h1{
+        font-family:DFKai-sb;
+        text-align: center;
+    }
+    </style>
+
+</head>
+
+<body>
+    <!-- HEARDR -->
+    <nav class="navbar  fixed-to navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">商品</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        關於我門
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">不給你點</a>
+                </li>
+            </ul>
+            <!-- Search form -->
+            <div class="md-form mt-0">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </div>
+            <!--會員登錄 START -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <form class="box" action="index.html" method="post">
+                            <h1>Login</h1>
+                            <input type="text" name="" placeholder="Username">
+                            <input type="password" name="" placeholder="Password">
+                            <input type="submit" name="" value="Login">
+                            <div><a href="#">Create a new account?</a></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--會員登錄 END -->
+            <!-- 購物車 START -->
+            <div class="modal fade" id="CART" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">購物車</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-12 mb-5">
+                                <h4 class="title-color">購物車</h4>
+                                <div class="d-block sidebar-product-list">
+                                    <a class="text-white remove" data-toggle="tooltip" data-placement="top" title="是否確定要移除">X</a>
+                                    <a href="product.html" class="d-inline-block">
+                                        <img src="./images/product/momo.jpg" alt="LTG-BY-0001" class="d-inline-block product-list-img">
+                                        <h6 class="d-inline-block">LTG-BY-0001</h6>
+                                    </a>
+                                    <p class="d-block text-secondary pl-4">
+                                        <span class="text-warning">1</span>&nbsp;X&nbsp;NT$500
+                                    </p>
+                                </div>
+                                <div class="d-block sidebar-product-list">
+                                    <a class="text-white remove" data-toggle="tooltip" data-placement="top" title="是否確定要移除">X</a>
+                                    <a href="product.html" class="d-inline-block">
+                                        <img src="./images/product/iphone.jpg" alt="LTG-BY-0001" class="d-inline-block product-list-img">
+                                        <h6 class="d-inline-block">LTG-BY-0001</h6>
+                                    </a>
+                                    <p class="d-block text-secondary pl-4">
+                                        <span class="text-warning">1</span>&nbsp;X&nbsp;NT$500
+                                    </p>
+                                </div>
+                                <div class="d-block sidebar-product-list">
+                                    <a class="text-white remove" data-toggle="tooltip" data-placement="top" title="是否確定要移除">X</a>
+                                    <a href="product.html" class="d-inline-block">
+                                        <img src="./images/product/iphone.jpg" alt="LTG-BY-0001" class="d-inline-block product-list-img">
+                                        <h6 class="d-inline-block">LTG-BY-0001</h6>
+                                    </a>
+                                    <p class="d-block text-secondary pl-4">
+                                        <span class="text-warning">1</span>&nbsp;X&nbsp;NT$500
+                                    </p>
+                                </div>
+                                <div class="d-block mt-3 mb-3">
+                                    <h5 class="text-center">小計：NT$&nbsp;1,000</h5>
+                                </div>
+                                <div class="d-block">
+                                    <a href="cart.html" class="btn btn-primary btn-block text-white" role="button">查看購物車</a>
+                                </div>
+                                <div class="d-block mt-1 mb-3">
+                                    <a href="checkout.html" class="btn btn-secondary btn-block text-white" role="button">結帳</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 購物車 END -->
+            <!--會員登錄&購物車BTN -->
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+                會員登入
+            </button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#CART">
+                購物車
+            </button>
+            <!--會員登錄&購物車BTN -->
+        </div>
+    </nav>
+    <!--header end-->
+    <section class="page-content">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <h1>會員專區</h1>
+
+                <!-- 會員舊資訊/start -->
+                <div class="col-12 col-md-6 mb-3 order">
+                    <h2 style="padding-top: 50px">會員資料</h2>
+                    <form action="">
+                        <div class="form-row" style="padding-top: 30px;">
+                            <div class="form-group col-md-12">
+                                <label for="FirstName"> 姓名 : 許柏聰  </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="account">帳號 : CCLemon</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">生日 : 1998 / 2/ 30 </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">連絡電話 : 0912345678</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="EMail">電子信箱 : riggin@gmail.com</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="Address">地址 : 全家就是你家</label>
+                        </div>
+
+                    </form>
+
+                <!-- 會員舊資訊/end -->
+                <!-- 會員新資訊/start -->
+                <div align="center">
+                   <a href="#" class="btn btn-outline-info btn-lg"><p class="flip" onclick="myFunction()">更改</p></a>
+                </div>
+                <script>
+                  function myFunction() {
+                    document.getElementById("panel").style.display = "block";
+                  }
+                </script>
+
+                    <div id="panel">
+                    <h2 style="padding-top: 50px">會員資料更改 </h2>
+
+                        <div class="form-row" style="padding-top: 30px;">
+                            <div class="form-group col-md-12">
+                                <label for="FirstName">姓名
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" class="form-control" id="FirstName" required placeholder="必填：例如：董謙千">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="account">帳號
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="account" class="form-control" id="account" required placeholder="必填，例如：0912-345-678">
+                        </div>
+                        <div class="form-group">
+                            <label for="date">生日
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="date" class="form-control" id="date" required placeholder="必填，例如：0912-345-678">
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">連絡電話
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="number" class="form-control" id="tel" required placeholder="必填，例如：0912-345-678">
+                        </div>
+                        <div class="form-group">
+                            <label for="EMail">電子信箱
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="email" class="form-control" id="EMail" required placeholder="必填，電子信箱">
+                        </div>
+                        <div class="form-group">
+                            <label for="Address">地址
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="Address" required placeholder="必填，縣/市-區/鄉/鎮-路/街-號/樓">
+                        </div>
+                        <div align="center">
+                            <a href="#" class="btn btn-outline-info btn-lg">確認更改</a>
+                        </div></div>
+                        <!-- 會員新資訊/end -->
+
+                    </form>
+                </div>
+                <!-- 會員資訊/end -->
+                <!-- 您的訂單/start -->
+                <div class="col-6 col-md-6 orders ">
+                    <h2 style="padding-top: 50px">訂單查詢</h2>
+                    <div class="table-responsive-sm">
+                        <table class="table table-bordered table-striped">
+                            <tbody>
+                                <tr>
+                                    <td  colspan="2" style="padding-left: 20px;">訂單編號</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">TUM-CL-B-0001</a></td>
+                                    <td><div align="center">
+                                        <a href="#" class="btn btn-outline-info btn-lg small">刪除</a>
+                                    </div></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">TUM-CL-B-0001</a></td>
+                                    <td><div align="center">
+                                        <a href="#" class="btn btn-outline-info btn-lg small">刪除</a>
+                                    </div></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">TUM-CL-B-0001</a></td>
+                                    <td><div align="center">
+                                        <a href="#" class="btn btn-outline-info btn-lg small">刪除</a>
+                                    </div></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">TUM-CL-B-0001</a></td>
+                                    <td><div align="center">
+                                        <a href="#" class="btn btn-outline-info btn-lg small">刪除</a>
+                                    </div></td>
+                                </tr>
+                                <tr>
+
+                                </tr>
+                            </tbody>
+                            <tfoot>
+
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <!-- 您的訂單/end -->
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
